@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: ghcr.io/radianteam/bpapp:main
+    ports:
+      - "8080:8080"
