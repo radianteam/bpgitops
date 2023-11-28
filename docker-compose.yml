@@ -2,6 +2,6 @@ version: '3'
 
 services:
   web:
-    image: ghcr.io/radianteam/bpapp:main
+    image: testcontainers/helloworld
     ports:
       - "8080:8080"
