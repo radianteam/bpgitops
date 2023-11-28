@@ -27,4 +27,4 @@ jobs:
 
       - name: Send HTTP Request
         run: |
-          curl --insecure -X POST https://34.123.175.154:9443/api/stacks/webhooks/480dfd30-cd66-41be-8b5e-c24cb499b92e
+          curl --insecure -X POST https://35.238.32.111:9443/api/stacks/webhooks/480dfd30-cd66-41be-8b5e-c24cb499b92e
