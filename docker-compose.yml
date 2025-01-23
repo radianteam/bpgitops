@@ -3,5 +3,5 @@ services:
     image: nginx:latest
     container_name: nginx
     ports:
-      - "8080:80"
+      - "8081:80"
 
