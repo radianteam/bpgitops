@@ -87,3 +87,7 @@ volumes:
   mongo1:
   mongo2:
   mongo3:
+
+configs:
+  prometheus_config:
+    external: true
