@@ -89,5 +89,5 @@ volumes:
   mongo3:
 
 configs:
-  prometheus_config:
+  prometheus-config:
     external: true
