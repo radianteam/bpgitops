@@ -34,6 +34,17 @@ services:
     networks:
       - mongo-cluster
 
+  mongodb_exporter:
+    image: percona/mongodb-exporter:latest
+    environment:
+      - MONGO_URI=mongodb://mongo1:30001,mongo2:30002,mongo3:30003  # URI реплика сета
+    networks:
+      - mongo-cluster
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
   mongo-express:
     image: mongo-express
     restart: always
