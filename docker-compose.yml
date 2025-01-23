@@ -40,7 +40,7 @@ services:
       - MONGODB_URI=mongodb://prometheus:123qwe@mongo1:30001,mongo2:30002,mongo3:30003/?replicaSet=my-replica-set
     networks:
       - mongo-cluster
-    command: --mongodb.direct-connect=false
+    command: --mongodb.direct-connect=false --collect-all
     deploy:
       replicas: 1
       restart_policy:
