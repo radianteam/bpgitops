@@ -37,9 +37,10 @@ services:
   mongodb_exporter:
     image: percona/mongodb_exporter:0.43.1
     environment:
-      - MONGODB_URI=mongodb://mongo1:30001/?replicaSet=my-replica-set
+      - MONGODB_URI=mongodb://mongo1:30001,mongo2:30002,mongo3:30003/?replicaSet=my-replica-set
     networks:
       - mongo-cluster
+    command: --mongodb.direct-connect=false
     deploy:
       replicas: 1
       restart_policy:
